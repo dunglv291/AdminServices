@@ -23,7 +23,7 @@ public class ProductRepImpl extends BaseRepository implements ProductRep {
     @Override
     public List<ProductsDto> getListProductsAll() {
         MapSqlParameterSource in = new MapSqlParameterSource();
-        String sql = "select * from Products";
+        String sql = "select * from products";
         return namedParameterJdbcTemplate.query(sql, in, BeanPropertyRowMapper.newInstance(ProductsDto.class));
     }
 

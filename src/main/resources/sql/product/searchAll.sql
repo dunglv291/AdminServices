@@ -1,1 +1,1 @@
-select * from PRODUCTS WHERE 1=1
+select * from products WHERE 1=1
